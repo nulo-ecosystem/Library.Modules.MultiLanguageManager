@@ -1,17 +1,19 @@
+using Nulo.Modules.MultiLanguageManager;
 using Nulo.Pages;
+using System;
+using System.Windows.Forms;
 
 namespace Nulo {
 
     internal static class Program {
+        public static MultiLanguageManager<LanguageData> MultiLanguageManager;
 
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         private static void Main() {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+
+            MultiLanguageManager = new MultiLanguageManager<LanguageData>("Nulo.Modules.MultiLanguageManager.Language");
+
             Application.Run(new MainPage());
         }
     }

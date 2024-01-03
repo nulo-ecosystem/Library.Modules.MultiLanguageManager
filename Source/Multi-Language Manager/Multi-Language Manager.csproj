@@ -27,6 +27,10 @@
     <NeutralLanguage>en</NeutralLanguage>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageIcon>Icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/nulo-ecosystem/library-modules-MultiLanguageManager</RepositoryUrl>
+    <Description>A library for language management in Nulo Ecosystem projects.</Description>
+    <PackageTags>library; language; nulo-ecosystem</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -35,6 +39,10 @@
       <PackagePath>\</PackagePath>
     </None>
     <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\Resources\Icon.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
