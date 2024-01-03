@@ -9,7 +9,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>Nulo.Modules.MultiLanguageManager</PackageId>
     <Title>Multi-Language Manager</Title>
-    <Version>0.0.1</Version>
+    <Version>1.0.0</Version>
     <Authors>kastney</Authors>
     <Company>Nulo Ecosystem</Company>
     <Product>Multi-Language Manager ®</Product>
