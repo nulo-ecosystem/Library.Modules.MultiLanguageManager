@@ -31,6 +31,15 @@
     <RepositoryUrl>https://github.com/nulo-ecosystem/library-modules-MultiLanguageManager</RepositoryUrl>
     <Description>A library for language management in Nulo Ecosystem projects.</Description>
     <PackageTags>library; language; nulo-ecosystem</PackageTags>
+    <PackageProjectUrl>https://github.com/nulo-ecosystem/library-modules-MultiLanguageManager/pkgs/nuget/Nulo.Modules.MultiLanguageManager</PackageProjectUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
