@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multi-Language Manager", "Source\Multi-Language Manager\Multi-Language Manager.csproj", "{3308ADD9-C1DB-4EC6-BFA8-22CDBB18627B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multi-Language Manager.Forms", "Source\Multi-Language Manager.Forms\Multi-Language Manager.Forms.csproj", "{4E0C4DE0-C3D2-4B5D-9F42-5C7EFFD89518}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3308ADD9-C1DB-4EC6-BFA8-22CDBB18627B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3308ADD9-C1DB-4EC6-BFA8-22CDBB18627B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3308ADD9-C1DB-4EC6-BFA8-22CDBB18627B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E0C4DE0-C3D2-4B5D-9F42-5C7EFFD89518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E0C4DE0-C3D2-4B5D-9F42-5C7EFFD89518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E0C4DE0-C3D2-4B5D-9F42-5C7EFFD89518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E0C4DE0-C3D2-4B5D-9F42-5C7EFFD89518}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
