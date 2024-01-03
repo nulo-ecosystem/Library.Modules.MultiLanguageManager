@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
 using System.Resources;
 
@@ -13,33 +12,54 @@ namespace Nulo.Modules.MultiLanguageManager {
         public event SwitchLanguageHandler SwitchLanguage;
 
         public MultiLanguageManager(string baseName) {
-            //Instanciando um objeto para manipular os dados de configuração do idioma;
             languageData = Activator.CreateInstance<LanguageData>();
-
-            //Definindo o idioma padrão.
             SetLanguage(languageData.GetLanguage());
-
-            //Obtendo os recursos de idiomas.
             resource = new ResourceManager(baseName, typeof(LanguageData).Assembly);
         }
 
-        public void Init() => SwitchLanguage?.Invoke();
+        #region Public Methods
 
-        public void SetLanguage(string language) {
-            //Obtendo a cultura do idioma.
-            culture = new CultureInfo(language);
+        public string GetText(string key) {
+            return resource.GetString(key, culture);
+        }
 
-            //Salvando nas configurações.
-            languageData.SaveLanguage(language);
-
-            //Informa que houve uma mudança.
+        public void Update() {
             SwitchLanguage?.Invoke();
         }
 
-        public string GetLanguage() => languageData.GetLanguage();
+        public void SetLanguage(int index) {
+            var languages = languageData.GetAvailableLanguages();
+            if(index > languages.Count) { return; }
+            SetLanguage(languages[index]);
+        }
 
-        public List<string> GetAvailableLanguages() => languageData.GetAvailableLanguages();
+        public string GetCurrentLanguage() {
+            return Convert(languageData.GetLanguage());
+        }
 
-        public string GetText(string key) => resource.GetString(key, culture);
+        public object[] GetLanguages() {
+            var languages = new object[languageData.GetAvailableLanguages().Count];
+            for(int i = 0; i < languageData.GetAvailableLanguages().Count; i++) {
+                languages[i] = Convert(languageData.GetAvailableLanguages()[i]);
+            }
+            return languages;
+        }
+
+        #endregion Public Methods
+
+        #region Private Methods
+
+        private void SetLanguage(string language) {
+            culture = new CultureInfo(language);
+            languageData.SaveLanguage(language);
+            SwitchLanguage?.Invoke();
+        }
+
+        private static string Convert(string language) {
+            var nativeName = new CultureInfo(language).NativeName;
+            return char.ToUpper(nativeName[0]) + nativeName[1..];
+        }
+
+        #endregion Private Methods
     }
 }

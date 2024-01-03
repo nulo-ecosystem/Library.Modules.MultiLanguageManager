@@ -4,14 +4,11 @@ using System.Globalization;
 namespace Nulo.Modules.MultiLanguageManager {
 
     public class LanguageData : ILanguageData {
-        private readonly List<string> availableLanguages;
 
-        public LanguageData() {
-            availableLanguages = [
-                "en-US",
-                "pt-BR"
-            ];
-        }
+        private readonly List<string> availableLanguages = [
+            "en-US",
+            "pt-BR"
+        ];
 
         public string GetLanguage() {
             var language = Properties.Settings.Default.Language;
@@ -30,8 +27,6 @@ namespace Nulo.Modules.MultiLanguageManager {
             Properties.Settings.Default.Save();
         }
 
-        public List<string> GetAvailableLanguages() {
-            return availableLanguages;
-        }
+        public List<string> GetAvailableLanguages() => availableLanguages;
     }
 }
