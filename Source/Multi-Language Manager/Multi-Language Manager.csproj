@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Nulo.Modules.MultiLanguageManager</RootNamespace>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyName>lib.mlm</AssemblyName>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>Nulo.Modules.MultiLanguageManager</PackageId>
+    <Title>Multi-Language Manager</Title>
+    <Version>0.0.1-alpha</Version>
+    <Authors>kastney</Authors>
+    <Company>Nulo Ecosystem</Company>
+    <Product>Multi-Language Manager ®</Product>
+    <Copyright>Copyright © 2024 Nulo Ecosystem</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>1. Breaking changes
+...
+
+2. New features
+...
+
+3. Bug fixes
+...</PackageReleaseNotes>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
