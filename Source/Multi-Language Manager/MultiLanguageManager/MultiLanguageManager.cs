@@ -27,7 +27,7 @@ namespace Nulo.Modules.MultiLanguageManager {
             SwitchLanguage?.Invoke();
         }
 
-        public void SetLanguage(int index) {
+        public void SetLanguageByIndex(int index) {
             var languages = languageData.GetAvailableLanguages();
             if(index > languages.Count) { return; }
             SetLanguage(languages[index]);

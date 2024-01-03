@@ -20,7 +20,7 @@ namespace Nulo.Pages {
         }
 
         private void LanguaageComboBox_SelectedIndexChanged(object sender, System.EventArgs e) {
-            Program.MultiLanguageManager.SetLanguage(LanguaageComboBox.SelectedIndex);
+            Program.MultiLanguageManager.SetLanguageByIndex(LanguaageComboBox.SelectedIndex);
         }
     }
 }
