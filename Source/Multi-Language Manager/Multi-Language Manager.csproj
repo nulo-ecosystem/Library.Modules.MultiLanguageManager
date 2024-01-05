@@ -3,13 +3,13 @@
   <PropertyGroup>
     <TargetFramework>net8.0-windows</TargetFramework>
     <RootNamespace>Nulo.Modules.MultiLanguageManager</RootNamespace>
-    <ImplicitUsings>disable</ImplicitUsings>
+    <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
     <AssemblyName>lib.mlm</AssemblyName>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>Nulo.Modules.MultiLanguageManager</PackageId>
     <Title>Multi-Language Manager</Title>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>kastney</Authors>
     <Company>Nulo Ecosystem</Company>
     <Product>Multi-Language Manager ®</Product>
@@ -55,6 +55,11 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="System.Globalization" />
+    <Using Include="System.Resources" />
   </ItemGroup>
 
 </Project>

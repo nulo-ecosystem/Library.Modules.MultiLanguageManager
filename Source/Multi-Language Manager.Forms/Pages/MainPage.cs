@@ -1,6 +1,4 @@
-﻿using System.Windows.Forms;
-
-namespace Nulo.Pages {
+﻿namespace Nulo.Pages {
 
     public partial class MainPage : Form {
 
@@ -10,7 +8,7 @@ namespace Nulo.Pages {
             Program.MultiLanguageManager.Update();
         }
 
-        private void MainPage_Load(object sender, System.EventArgs e) {
+        private void MainPage_Load(object sender, EventArgs e) {
             LanguaageComboBox.Items.AddRange(Program.MultiLanguageManager.GetLanguages());
             LanguaageComboBox.SelectedItem = Program.MultiLanguageManager.GetCurrentLanguage();
         }
@@ -19,7 +17,7 @@ namespace Nulo.Pages {
             MessageLabel.Text = Program.MultiLanguageManager.GetText("Message");
         }
 
-        private void LanguaageComboBox_SelectedIndexChanged(object sender, System.EventArgs e) {
+        private void LanguaageComboBox_SelectedIndexChanged(object sender, EventArgs e) {
             Program.MultiLanguageManager.SetLanguageByIndex(LanguaageComboBox.SelectedIndex);
         }
     }

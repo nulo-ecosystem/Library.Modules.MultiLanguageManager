@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Nulo.Modules.MultiLanguageManager {
+﻿namespace Nulo.Modules.MultiLanguageManager {
 
     public interface ILanguageData {
 

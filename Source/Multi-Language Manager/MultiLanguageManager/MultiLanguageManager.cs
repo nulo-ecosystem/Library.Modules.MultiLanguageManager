@@ -1,8 +1,4 @@
-﻿using System;
-using System.Globalization;
-using System.Resources;
-
-namespace Nulo.Modules.MultiLanguageManager {
+﻿namespace Nulo.Modules.MultiLanguageManager {
 
     public class MultiLanguageManager<LanguageData> where LanguageData : ILanguageData {
         private CultureInfo culture;

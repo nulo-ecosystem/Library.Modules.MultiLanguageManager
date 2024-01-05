@@ -1,7 +1,5 @@
 using Nulo.Modules.MultiLanguageManager;
 using Nulo.Pages;
-using System;
-using System.Windows.Forms;
 
 namespace Nulo {
 

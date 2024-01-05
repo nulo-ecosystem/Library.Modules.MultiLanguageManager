@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Globalization;
-
-namespace Nulo.Modules.MultiLanguageManager {
+﻿namespace Nulo.Modules.MultiLanguageManager {
 
     public class LanguageData : ILanguageData {
 
