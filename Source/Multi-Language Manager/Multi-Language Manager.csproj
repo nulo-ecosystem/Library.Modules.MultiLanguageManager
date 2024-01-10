@@ -28,10 +28,10 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageIcon>Icon.png</PackageIcon>
-    <RepositoryUrl>https://github.com/nulo-ecosystem/library-modules-MultiLanguageManager</RepositoryUrl>
+    <RepositoryUrl>https://github.com/nulo-ecosystem/Library.Modules.MultiLanguageManager</RepositoryUrl>
     <Description>A library for language management in Nulo Ecosystem projects.</Description>
     <PackageTags>library; language; nulo-ecosystem</PackageTags>
-    <PackageProjectUrl>https://github.com/nulo-ecosystem/library-modules-MultiLanguageManager/pkgs/nuget/Nulo.Modules.MultiLanguageManager</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/nulo-ecosystem/Library.Modules.MultiLanguageManager/pkgs/nuget/Nulo.Modules.MultiLanguageManager</PackageProjectUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
