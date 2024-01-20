@@ -16,7 +16,11 @@
         #region Public Methods
 
         public string GetText(string key) {
-            return resource.GetString(key, culture);
+            try {
+                return resource.GetString(key, culture);
+            } catch {
+                return "????????????????";
+            }
         }
 
         public void Update() {
